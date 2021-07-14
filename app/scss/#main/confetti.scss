@@ -1,0 +1,14 @@
+div.confetti {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+div.confetti img {
+    min-width: 1440px;
+    margin: 0 auto;
+}
+
+.confetti {
+    z-index: 0;
+}

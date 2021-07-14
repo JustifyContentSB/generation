@@ -1,0 +1,40 @@
+.footer {
+    padding: 30px 30px 60px;
+    background: url('../../images/footer/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+    &__logo {
+        display: flex;
+        justify-content: flex-end;
+        &-desktop {
+            display: none;
+        }
+        &-mob {
+            position: relative;
+            bottom: -50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        min-height: 300px;
+        &__logo {
+            &-mob {
+                display: none;
+            }
+            &-desktop {
+                display: block;
+                position: relative;
+                bottom: -70px;
+            }
+        }
+    }
+}

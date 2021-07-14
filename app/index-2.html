@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[*pagetitle*]</title>
+    <meta property="og:url" content="[(site_url)]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="[*pagetitle*]" />
+    <meta property="og:description" content="[*description*]" />
+    <meta property="og:image" content="[(site_url)]images/ogimage.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="[(site_url)]images/ogimage.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index/style.min.css">
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="confetti confetti1">
+        <img src="images/confetti/1.png" alt="">
+    </div>
+    <div class="confetti confetti2">
+        <img src="images/confetti/2.png" alt="">
+    </div>
+    <div class="confetti confetti3">
+        <img src="images/confetti/3.png" alt="">
+    </div>
+
+    <header class="header" id="top">
+        <div class="header__inner">
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <a class="header__burger"><img src="images/icons/burger.svg" alt="открыть меню" width="40" height="35"></a>
+                    <ul class="header__list">
+                        <li>
+                            <a href="#top">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#rules">Правила игры</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__logo header__logo-mob"><img src="images/icons/logo.svg" alt="generation ox" width="173" height="60"></div>
+            <div class="header__logo header__logo-desktop"><img src="images/icons/logo-desktop.png" alt="generation ox" width="475" height="165"></div>
+            <section class="header__info">
+                <h1 class="header__title">Привет, <br> Generation OX.</h1>
+                <div class="header__text" data-aos="fade-up">
+                    <p>Добро пожаловать на интерактивную платформу, где в ближайшее время пройдёт серия увлекательных активностей. Здесь мы начнём постепенно погружаться в атмосферу предстоящего летнего корпоратива.</p>
+                    <p>Oxagile исполняется 16 лет. Эта дата - отличный повод снова окунуться в старые-добрые 90-ые. Ведь юность большинства из нас пришлась как раз на эти лихие годы. Это и есть то, что нас объединяет, помимо любви к технологиям и качественному
+                        коду. <b class="header__text-together">Вместе мы - Generation OX!</b> <b class="header__text-summer">Давай зажжём это лето!</b></p>
+                </div>
+                <div class="header__timer">
+                    <div class="count__info count__days header__timer-count">
+                        <div class="count__time">15</div>
+                        <div class="count__type">дней</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                         <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-days" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__hours header__timer-count">
+                        <div class="count__time">15</div>
+                        <div class="count__type">часов</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                            <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-hours" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__minutes header__timer-count">
+                        <div class="count__time">48</div>
+                        <div class="count__type">минут</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                            <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__seconds header__timer-count">
+                        <div class="count__time">50</div>
+                        <div class="count__type">секунд</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                         <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-seccond" r="47" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                </div>
+            </section>
+            <img class="header__girl" src="images/header/girl.png" alt="girl" width="577" height="566">
+        </div>
+    </header>
+    <main>
+        <section class="rules" id="rules">
+            <div class="rules__block">
+                <h2 class="rules__title" data-aos="fade-up">Правила игры</h2>
+                <div class="rules__inner">
+                    <div class="rules__text" data-aos="fade-up">
+                        <p>Псс, парень, интересный товар не интересует? У нас тут появилась информация, что предприимчивые «челноки» смогли заполучить из-за границы несколько уникальных экземпляров игры. </p>
+                        <p>Говорят, что это <b>игра</b>, которая полностью перевернёт наше представления о корпоративных мероприятиях и тимбилдинге в целом. Заинтригован? Тогда переходи по <a href="#" target="_blank">ссылке</a> и скачивай <b>«Правила игры Generation
+                            OX».</b>
+                        </p>
+                        <p>У вас есть время для изучения правил, а потом мы снова ждём тебя здесь, на нашей платформе Generation OX.
+                        </p>
+                    </div>
+                    <div class="rules__read">
+                        <img class="rules__read-img" src="images/rules/btns.png" alt="кнопки" width="327" data-aos="zoom-in">
+                        <div class="rules__read-btn" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="rules__read-btn__inner">
+                                <span class="rules__read-btn__close"><img src="images/icons/close.png" alt="закрыть" width="35" height="33"></span>
+                                <p>ПРАВИЛАМИ ИГРЫ <br> GENERATION OX</p>
+                                <a class="rules__read-btn__link" href="#"><span>читать</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules__about" data-aos="fade-up">
+                        <p>Ознакомиться с правилами игры «Generation OX» можно в срок до <b>5 июля</b>. Затем мы снова ждём вас на нашем сайте.</p>
+                        <p><b>Тебя ждёт ещё много интересного!</b></p>
+                    </div>
+                </div>
+                <img class="rules__img" src="images/rules/bag.png" alt="сумка" width="160">
+                <img class="rules__sneakers" src="images/rules/sneakers.png" alt="кроссовки" width="353">
+                <img class="rules__tetris" src="images/rules/tetris.png" alt="тетрис" width="324">
+            </div>
+        </section>
+        <section class="survey">
+            <div class="survey__inner">
+                <div class="survey__img"><img src="images/survey/monitor.png" alt="вопрос"></div>
+                <div class="survey__info">
+                    <p class="survey__what">Опрос</p>
+                    <h2 class="survey__title">МНЕ <span>НУЖНА ТВОЯ ОДЕЖДА</span> <br> НУЖЕН ТВОЙ ГОЛОС </h2>
+                    <div class="survey__text">
+                        <p>Социологический опрос для тех, кто уже ознакомился с правилами игры!</p>
+                        <p>Готов ли ты к главной активности корпоратива? Пройди опрос и узнаешь 🙂 А чтобы опрос был релевантный - ниже немного мотивации от легендарного Т-800.</p>
+                    </div>
+                    <a class="survey__down" href="#"><img src="images/icons/down.svg" alt="вниз"></a>
+                    <p class="survey__offer">ПРОЙТИ ТЕСТ</p>
+                    <div class="survey__btns">
+                        <a class="survey__btn btn" href="#"><span class="btn__inner">Yes</span></a>
+                        <a class="survey__btn survey__btn-disabled btn" href="#"><span class="btn__inner">No</span></a>
+                    </div>
+                </div>
+            </div>
+            <img class="survey__disk" src="images/survey/disk.png" alt="disk" width="125" height="125">
+        </section>
+        <section class="photo photo--1">
+            <div class="photo__inner">
+                <div class="photo__info">
+                    <img class="photo__app" src="images/photo/app.png" alt="фотка" width="275">
+                    <p class="photo__about">Фотоконкурс</p>
+                    <h2 class="photo__title">Привет из…</h2>
+                    <p class="photo__text">Не хлам, а ностальгия! Готовы поспорить, что даже в 2021 году у каждого найдется что-то мегаретровое: NOKIA 3310, холодильник «Минск-1», фишки или пыльный тетрис в углу антресоли. Присылайте фото своих находок и оставьте креативное
+                        описание под ними. Посмотрим сколько тёплых воспоминаний поднимут эти капсулы времени.</p>
+                    <a class="photo__btn btn" href="#">
+                        <div class="btn__inner">загрузить</div>
+                    </a>
+                </div>
+                <div class="photo__list">
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img src="images/photo/photo.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo__bottom">
+                    <a class="photo__more" href="#">Смотреть больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="photo photo--2">
+            <div class="photo__inner">
+                <div class="photo__info">
+                    <img class="photo__camera" src="images/photo/camera.png" alt="фотка" width="257">
+                    <img class="photo__cap" src="images/photo/cap.png" alt="фотка" width="257">
+                    <img class="photo__chupa" src="images/photo/chupa.png" alt="фотка" width="257">
+                    <p class="photo__about">Фотоконкурс</p>
+                    <h2 class="photo__title">Мои лихие</h2>
+                    <p class="photo__text">Колготки поверх свитера, майка «Титаник» и джинсы трубы, кислотные леггинсы и олимпийка, а может даже каракулевая меховая шапка – основа 8 из 10 луков в лихие 90-ые. Потревожим скелетов в шкафу, но только, чтобы заглянуть в ваш гардероб
+                        30-летней давности. Найдите своё фото из 90-ых, загрузите на сайт, а зрительское голосование определит икону стиля <span style="color: #E15EFF;">Generation</span> <span style="color: #FFFF5A;">OX</span>!</p>
+                    <a class="photo__btn btn" href="#">
+                        <div class="btn__inner">загрузить</div>
+                    </a>
+                </div>
+                <div class="photo__list">
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <img class="photo__list-kodak" src="images/photo/kodak.png" alt="kodak">
+                            <img src="images/photo/photo-2.png" alt="фотография">
+                            <a class="photo__list-img__loop" href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/sprite.svg#loop"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo__bottom">
+                    <a class="photo__more" href="#">Смотреть больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="photo photo--3">
+            <div class="photo__inner">
+                <div class="photo__info">
+                    <img class="photo__childs" src="images/photo/child.png" alt="любовь это...">
+                    <img class="photo__card" src="images/photo/card.png" alt="любовь это...">
+                    <p class="photo__about">Конкурс</p>
+                    <h2 class="photo__title">Oxagile is…</h2>
+                    <p class="photo__text">В 90-е мы все узнавали, что такое любовь из заморской жвачки. <br> <br> Присылайте свой вариант того, что для вас Oxagile. Составим свою неповторимую коллекцию вкладышей!</p>
+                    <a class="photo__btn btn" href="#">
+                        <div class="btn__inner">ОТПРАВИТЬ</div>
+                    </a>
+                </div>
+                <div class="photo__list">
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                    <div class="photo__list-item">
+                        <div class="photo__list-img">
+                            <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                            <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                            <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                            <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                        </div>
+                        <div class="photo__list-info">
+                            <div class="photo__list-likes">
+                                <a class="photo__list-like" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                                <span class="photo__list-num">+0</span>
+                            </div>
+                            <p class="photo__list-author">Александр Иванов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo__bottom">
+                    <a class="photo__more" href="#">Смотреть больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="photo photo--4">
+            <div class="photo__inner">
+                <div class="photo__info">
+                    <img class="photo__eye" src="images/photo/eye.png" alt="глаза">
+                    <p class="photo__about">Игра</p>
+                    <h2 class="photo__title">10OX к одному</h2>
+                    <p class="photo__text">Возродим культовую игру 100 к 1! <br> <br> В Google форме ты найдешь 15 вопросов про 90-е. Отвечай первое, что приходит в голову. Эти ответы понадобятся 24 июля, где пройдет сама игра. Погнали!</p>
+                    <a class="photo__btn btn" href="#">
+                        <div class="btn__inner">начать</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="photo photo--5">
+            <div class="photo__inner">
+                <div class="photo__info">
+                    <img class="photo__musicians" src="images/photo/musicians.png" alt="музыканты">
+                    <p class="photo__about">Музыка</p>
+                    <h2 class="photo__title">MTV feat. DJ OX</h2>
+                    <p class="photo__text">Музыка нас связала, а мы под эту музыку нехило отвязывались! Хватай карандаш и перематывай кассету. На стороне А уже записаны 45 русских хитов, и на стороне Б – ещё столько же отборной зарубежной музыки.</p>
+                </div>
+                <div class="photo__list">
+                    <a class="photo__list-item" href="#">
+                        <img src="images/photo/casset-1.png" alt="кассета">
+                    </a>
+                    <a class="photo__list-item" href="#">
+                        <img src="images/photo/casset-2.png" alt="кассета">
+                    </a>
+                    <a class="photo__list-item" href="#">
+                        <img src="images/photo/casset-3.png" alt="кассета">
+                    </a>
+                </div>
+                <p class="photo__musicians-text">Учите тексты песен и готовьтесь подпевать <br> за кавер-бендом Oxagile!</p>
+        </section>
+        <section class="photo photo--6">
+            <div class="photo__inner">
+                <img class="photo__png-1" src="images/photo/png-1.png" alt="картинка">
+                <img class="photo__png-2" src="images/photo/png-2.png" alt="картинка">
+                <img class="photo__png-3" src="images/photo/png-3.png" alt="картинка">
+                <div class="photo__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="photo__slide swiper-slide">
+                            <div class="photo__slide-img">
+                                <img src="images/photo/brat.png" alt="брат">
+                            </div>
+                            <div class="photo__slide-info">
+                                <h3 class="photo__slide-title">Брат (1997)</h3>
+                                <p class="photo__slide-genre">Драма, криминал</p>
+                                <a class="photo__slide-link" href="#">https://www.youtube.com/watch?v=YewLBN43HqI
+                            </a>
+                            </div>
+                        </div>
+                        <div class="photo__slide swiper-slide">
+                            <div class="photo__slide-img">
+                                <img src="images/photo/brat.png" alt="брат">
+                            </div>
+                            <div class="photo__slide-info">
+                                <h3 class="photo__slide-title">Брат (1997)</h3>
+                                <p class="photo__slide-genre">Драма, криминал</p>
+                                <a class="photo__slide-link" href="#">https://www.youtube.com/watch?v=YewLBN43HqI
+                            </a>
+                            </div>
+                        </div>
+                        <div class="photo__slide swiper-slide">
+                            <div class="photo__slide-img">
+                                <img src="images/photo/brat.png" alt="брат">
+                            </div>
+                            <div class="photo__slide-info">
+                                <h3 class="photo__slide-title">Брат (1997)</h3>
+                                <p class="photo__slide-genre">Драма, криминал</p>
+                                <a class="photo__slide-link" href="#">https://www.youtube.com/watch?v=YewLBN43HqI
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg>
+                            <use xlink:href="images/icons/sprite.svg#swiperPrev"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg>
+                            <use xlink:href="images/icons/sprite.svg#swiperNext"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="photo__info">
+                    <p class="photo__about">фильмы</p>
+                    <h2 class="photo__title"><span style="color: #31F7F7;">9O</span><span style="color: #ffff5a;">xagile</span></h2>
+                    <p class="photo__text">Постеры этих фильмов висели в каждой уважающей себя детской комнате. А актеры стали кумирами целого поколения. Выберите фильм из подборки и на 2 часа перенеситесь в то время, когда мама на кухне пекла хворост для компании ребят, усевшейся
+                        на полу перед экраном телевизора. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup popup-start">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <div class="popup__text">
+                <p>Хм, очень жаль. Хотим сказать, что наша рыночная система всё равно не сможет работать без тебя, дорогой друг. </p>
+                <p>Добро пожаловать в группу «потребители». Маленький совет: не вздумай скупать акции МММ, ходят слухи, что это финансовая пирамида.</p>
+            </div>
+            <a class="btn" href="#">
+                <div class="btn__inner">Пройти тест</div>
+            </a>
+        </div>
+        <img src="images/popup/man.png" alt="man" class="popup__man">
+        <p class="popup__dialog">Уважаемый, тест сам себя не пройдет! Перетереть за жизнь Кликай и узнаешь, кем будешь на стрелке 24 июля в Якутских горах. </p>
+        <p class="popup__no">No?</p>
+    </div>
+
+    <div class="popup popup-thanks">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <div>
+                <p class="popup-thanks__title">Спасибо!</p>
+                <p>Фотография успешно отправлена.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-thanks popup-thanks--2">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <div>
+                <p class="popup-thanks__title">Спасибо!</p>
+                <p>Фотография успешно отправлена.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-hello">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <h2 class="popup-hello__title">Привет из…</h2>
+            <div class="popup__inputs">
+                <input class="popup__name" type="text" placeholder="Имя">
+                <input class="popup__lastname" type="text" placeholder="Фамилия">
+                <textarea class="popup__textarea" placeholder="Ваше креативное описание фото " class="popup-hello__textarea"></textarea>
+                <label class="popup__download">
+                    <input type="file">
+                    <span>Загрузить фотографию</span>
+                </label>
+            </div>
+            <a class="btn" href="#">
+                <div class="btn__inner">ОТПРАВИТЬ</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="popup popup-hello popup-hello--2">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <h2 class="popup-hello__title">Мои лихие</h2>
+            <div class="popup__inputs">
+                <input class="popup__name" type="text" placeholder="Имя">
+                <input class="popup__lastname" type="text" placeholder="Фамилия">
+                <label class="popup__download">
+                    <input type="file">
+                    <span>Загрузить фотографию</span>
+                </label>
+            </div>
+            <a class="btn" href="#">
+                <div class="btn__inner">ОТПРАВИТЬ</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="popup popup-hello popup-hello--3">
+        <a class="popup__close" href="#">
+            <span class="popup__close-inner">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </a>
+        <div class="popup__inner">
+            <h2 class="popup-hello__title">Oxagile is…</h2>
+            <div class="popup__inputs">
+                <input class="popup__name" type="text" placeholder="Имя">
+                <input class="popup__lastname" type="text" placeholder="Фамилия">
+                <textarea class="popup__textarea" placeholder="Дополните фразу Oxagile is..." class="popup-hello__textarea"></textarea>
+                <div class="popup__oxagile photo__list-img">
+                    <p class="photo__list-phrase"><img src="images/photo/phrase.svg" alt="oxagile is..."></p>
+                    <p class="photo__list-team"><img src="images/photo/team.svg" alt="лучшая команда"></p>
+                    <img class="photo__list-oxagile" src="images/photo/photo-3.png" alt="фотография">
+                    <img class="photo__list-love" src="images/photo/love.png" alt="фотка">
+                </div>
+            </div>
+            <a class="btn" href="#">
+                <div class="btn__inner">ОТПРАВИТЬ</div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+.rules {
+    padding: 60px 30px 30px;
+    position: relative;
+    &__sneakers {
+        display: none;
+    }
+    &__tetris {
+        display: none;
+    }
+    &__img {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        z-index: 5;
+    }
+    &__title {
+        font-family: $turismo;
+        color: $fourthColor;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 31px;
+    }
+    &__text {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        p+p {
+            margin-top: 20px;
+        }
+        a {
+            font-weight: 500;
+            color: $fourthColor;
+        }
+    }
+    &__read {
+        max-width: 360px;
+        margin: 0 auto;
+        padding-bottom: 115px;
+        position: relative;
+        &-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &-btn {
+            width: 250px;
+            margin-left: auto;
+            border: 4px solid #000;
+            background: #CCCCCC;
+            font-family: $psychic;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            position: relative;
+            z-index: 1;
+            &__inner {
+                position: relative;
+                padding: 24px 20px 16px;
+                border-top: 4px solid #fff;
+                border-left: 4px solid #fff;
+                border-right: 4px solid #898989;
+                border-bottom: 4px solid #898989;
+            }
+            &__close {
+                position: absolute;
+                top: 2px;
+                right: 0;
+            }
+            p {
+                margin-bottom: 20px;
+                font-size: 24px;
+                line-height: 19px;
+            }
+            &__link {
+                max-width: 204px;
+                margin: 0 auto;
+                display: block;
+                font-size: 32px;
+                line-height: 28px;
+                border: 3px solid #000;
+                span {
+                    padding: 2px;
+                    display: block;
+                    border-top: 3px solid #fff;
+                    border-left: 3px solid #fff;
+                    border-right: 3px solid #898989;
+                    border-bottom: 3px solid #898989;
+                }
+                &:hover,
+                &:focus {
+                    border-color: #fff;
+                    color: $fourthColor;
+                    span {
+                        border-top-color: $fourthColor;
+                        border-left-color: $fourthColor;
+                        border-right-color: #8700A6;
+                        border-bottom-color: #8700A6;
+                    }
+                }
+            }
+        }
+    }
+    &__about {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        b {
+            color: $fourthColor;
+        }
+        p+p {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .rules {
+        padding: 20px 80px 50px;
+        &__block {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        &__title {
+            text-align: right;
+            margin-bottom: 58px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__text {
+            margin-top: 0;
+            max-width: 560px;
+            font-size: 18px;
+            line-height: 28px;
+            p+p {
+                margin-top: 25px;
+            }
+        }
+        &__read {
+            max-width: 600px;
+            width: 600px;
+            padding-bottom: 200px;
+            margin: 0;
+            margin-right: auto;
+            order: -1;
+            &-img {
+                width: 545px;
+            }
+            &-btn {
+                width: 420px;
+                &__inner {
+                    padding: 52px 35px 26px;
+                }
+                p {
+                    margin-bottom: 32px;
+                    font-size: 36px;
+                    line-height: 28px;
+                }
+                &__link {
+                    max-width: 340px;
+                    font-size: 48px;
+                    line-height: 28px;
+                    border-width: 5px;
+                    span {
+                        padding: 19px 0;
+                        border-width: 4px;
+                    }
+                }
+                &__close {
+                    top: 6px;
+                    right: 4px;
+                    width: 42px;
+                    height: 42px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &__about {
+            margin-top: 80px;
+            max-width: 610px;
+            font-size: 18px;
+            line-height: 28px;
+            b {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+        &__img {
+            width: 450px;
+            top: auto;
+            bottom: -170px;
+        }
+        &__sneakers {
+            display: block;
+            position: absolute;
+            top: -190px;
+            left: 65px;
+        }
+        &__tetris {
+            display: block;
+            position: absolute;
+            right: 50px;
+            top: -300px;
+        }
+    }
+}

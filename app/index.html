@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[*pagetitle*]</title>
+    <meta property="og:url" content="[(site_url)]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="[*pagetitle*]" />
+    <meta property="og:description" content="[*description*]" />
+    <meta property="og:image" content="[(site_url)]images/ogimage.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="[(site_url)]images/ogimage.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index/style.min.css">
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="confetti confetti1">
+        <img src="images/confetti/1.png" alt="">
+    </div>
+    <div class="confetti confetti2">
+        <img src="images/confetti/2.png" alt="">
+    </div>
+    <div class="confetti confetti3">
+        <img src="images/confetti/3.png" alt="">
+    </div>
+
+    <header class="header" id="top">
+        <div class="header__inner">
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <a class="header__burger"><img src="images/icons/burger.svg" alt="открыть меню" width="40" height="35"></a>
+                    <ul class="header__list">
+                        <li>
+                            <a href="#top">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#rules">Правила игры</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__logo header__logo-mob"><img src="images/icons/logo.svg" alt="generation ox" width="173" height="60"></div>
+            <div class="header__logo header__logo-desktop"><img src="images/icons/logo-desktop.png" alt="generation ox" width="475" height="165"></div>
+            <section class="header__info">
+                <h1 class="header__title">Привет, <br> Generation OX.</h1>
+                <div class="header__text" data-aos="fade-up">
+                    <p>Добро пожаловать на интерактивную платформу, где в ближайшее время пройдёт серия увлекательных активностей. Здесь мы начнём постепенно погружаться в атмосферу предстоящего летнего корпоратива.</p>
+                    <p>Oxagile исполняется 16 лет. Эта дата - отличный повод снова окунуться в старые-добрые 90-ые. Ведь юность большинства из нас пришлась как раз на эти лихие годы. Это и есть то, что нас объединяет, помимо любви к технологиям и качественному
+                        коду. <b class="header__text-together">Вместе мы - Generation OX!</b> <b class="header__text-summer">Давай зажжём это лето!</b></p>
+                </div>
+                <!-- <div class="header__timer" data-aos="fade-up" data-aos-delay="350">
+                    <div class="header__timer-count header__timer-count__secs">
+                        <svg class="header__timer-count__svg arc-seccond" width="132" height="132" viewBox="0 0 130 130">
+                            <circle cx="65" cy="65" r="62" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round"></circle>
+                            <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" d="M 8.5 35.69965626587222 A 63 63 0 1 0 50 3"></path>
+                        </svg>
+                        <div class="header__timer-values">
+                            <p class="header__timer-seccond header__timer-num">0</p> <span class="header__timer-s">секунды</span>
+                        </div>
+                    </div>
+                    <div class="header__timer-count header__timer-count__mins">
+                        <svg class="header__timer-count__svg arc-minutes" width="132" height="132" viewBox="0 0 130 130">
+                            <circle cx="65" cy="65" r="62" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round"></circle>
+                            <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" d="M 8.5 35.69965626587222 A 63 63 0 1 0 50 3"></path>
+                        </svg>
+                        <div class="header__timer-values">
+                            <p class="header__timer-minutes header__timer-num">0</p> <span class="header__timer-m">минуты</span>
+                        </div>
+                    </div>
+                    <div class="header__timer-count header__timer-count__hours">
+                        <svg class="header__timer-count__svg arc-hours" width="132" height="132" viewBox="0 0 130 130">
+                            <circle cx="65" cy="65" r="62" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round"></circle>
+                            <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" d="M 8.5 35.69965626587222 A 63 63 0 1 0 50 3"></path>
+                        </svg>
+                        <div class="header__timer-values">
+                            <p class="header__timer-hours header__timer-num">0</p> <span class="header__timer-h">часов</span>
+                        </div>
+                    </div>
+                    <div class="header__timer-count header__timer-count__days">
+                        <svg class="header__timer-count__svg arc-days" width="132" height="132" viewBox="0 0 130 130">
+                            <circle cx="65" cy="65" r="62" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round"></circle>
+                            <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" d="M 8.5 35.69965626587222 A 63 63 0 1 0 50 3"></path>
+                        </svg>
+                        <div class="header__timer-values">
+                            <p class="header__timer-days header__timer-num">0</p> <span class="header__timer-d">дня</span>
+                        </div>
+                    </div>
+                    <p class="header__timer-text">До начала мероприятия осталось</p>
+                </div> -->
+                <div class="header__timer">
+                    <div class="count__info count__days header__timer-count">
+                        <div class="count__time">15</div>
+                        <div class="count__type">дней</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                         <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-days" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__hours header__timer-count">
+                        <div class="count__time">15</div>
+                        <div class="count__type">часов</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                            <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-hours" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__minutes header__timer-count">
+                        <div class="count__time">48</div>
+                        <div class="count__type">минут</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                            <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-minutes" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                    <div class="count__info count__seconds header__timer-count">
+                        <div class="count__time">50</div>
+                        <div class="count__type">секунд</div>
+                        <svg class="count__svg" width="126" height="126" viewBox="0 0 126 126">
+                         <circle  cx="62" cy="62" r="60" stroke="#C4985A" stroke-width="5" fill="none" stroke-licecap="round" />
+                         <path class="arc-seccond" r="47" fill="none" stroke="#BDCAD6" stroke-width="5" />
+                     </svg>
+                    </div>
+                </div>
+            </section>
+            <img class="header__girl" src="images/header/girl.png" alt="girl" width="577" height="566">
+        </div>
+    </header>
+    <main>
+        <section class="rules" id="rules">
+            <div class="rules__block">
+                <h2 class="rules__title" data-aos="fade-up">Правила игры</h2>
+                <div class="rules__inner">
+                    <div class="rules__text" data-aos="fade-up">
+                        <p>Псс, парень, интересный товар не интересует? У нас тут появилась информация, что предприимчивые «челноки» смогли заполучить из-за границы несколько уникальных экземпляров игры. </p>
+                        <p>Говорят, что это <b>игра</b>, которая полностью перевернёт наше представления о корпоративных мероприятиях и тимбилдинге в целом. Заинтригован? Тогда переходи по <a href="#" target="_blank">ссылке</a> и скачивай <b>«Правила игры Generation
+                            OX».</b>
+                        </p>
+                        <p>У вас есть время для изучения правил, а потом мы снова ждём тебя здесь, на нашей платформе Generation OX.
+                        </p>
+                    </div>
+                    <div class="rules__read">
+                        <img class="rules__read-img" src="images/rules/btns.png" alt="кнопки" width="327" data-aos="zoom-in">
+                        <div class="rules__read-btn" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="rules__read-btn__inner">
+                                <span class="rules__read-btn__close"><img src="images/icons/close.png" alt="закрыть" width="35" height="33"></span>
+                                <p>ПРАВИЛАМИ ИГРЫ <br> GENERATION OX</p>
+                                <a class="rules__read-btn__link" href="#"><span>читать</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules__about" data-aos="fade-up">
+                        <p>Ознакомиться с правилами игры «Generation OX» можно в срок до <b>5 июля</b>. Затем мы снова ждём вас на нашем сайте.</p>
+                        <p><b>Тебя ждёт ещё много интересного!</b></p>
+                    </div>
+                </div>
+                <img class="rules__img" src="images/rules/bag.png" alt="сумка" width="160">
+                <img class="rules__sneakers" src="images/rules/sneakers.png" alt="кроссовки" width="353">
+                <img class="rules__tetris" src="images/rules/tetris.png" alt="тетрис" width="324">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo footer__logo-mob"><img src="images/icons/logo.svg" alt="generation ox" width="209" height="73"></div>
+        <div class="footer__logo footer__logo-desktop"><img src="images/icons/logo-desktop.png" alt="generation ox" width="337"></div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

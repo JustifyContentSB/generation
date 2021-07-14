@@ -1,0 +1,84 @@
+.test {
+    padding-top: 184px;
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+        color: $thirdColor;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 100%;
+        font-family: $turismo;
+    }
+    &__question {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 38px;
+        color: $firstColor;
+        text-align: center;
+        font-family: $turismo;
+        span {
+            color: $fourthColor;
+        }
+    }
+    &__start {
+        display: block;
+        padding: 9px;
+        max-width: 220px;
+        margin: 0 auto;
+        margin-top: 80px;
+        background: $secondColor;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        border: 6px solid #000;
+        text-align: center;
+        &:hover,
+        &:focus {
+            background: $thirdColor;
+            transition: $transition;
+        }
+    }
+    &__prev {
+        margin-top: 50px;
+        text-align: center;
+        a {
+            padding: 10px 0 10px 65px;
+            font-family: $psychic;
+            text-transform: uppercase;
+            color: $thirdColor;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 20px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 42px;
+                height: 24px;
+                background: url('../../images/icons/arrow.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .test {
+        &__title {
+            margin-bottom: 10px;
+            font-size: 32px;
+            line-height: 72px;
+        }
+        &__question {
+            font-size: 60px;
+            line-height: 72px;
+        }
+        &__start {
+            margin-top: 120px;
+        }
+    }
+}

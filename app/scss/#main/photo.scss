@@ -1,0 +1,617 @@
+.photo {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 100px;
+    &--2 {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        background: url('../../images/photo/photo-4-bg-tel.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        .photo {
+            &__title {
+                color: $secondColor;
+            }
+            &__list {
+                &-item {
+                    min-width: 294px;
+                    max-width: 294px;
+                    padding: 0;
+                    background: transparent;
+                }
+                &-img {
+                    min-height: 250px;
+                    border: none;
+                    border-radius: 0;
+                    display: flex;
+                    &__loop {
+                        bottom: 50px;
+                        right: 30px;
+                    }
+                    img {
+                        display: block;
+                        margin: auto;
+                        width: 270px;
+                        height: auto;
+                    }
+                }
+                &-author {
+                    color: #fff;
+                }
+                img.photo__list-kodak {
+                    width: 300px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &--3 {
+        .photo {
+            &__info {
+                padding-top: 100px;
+            }
+            &__list {
+                &-item {
+                    min-width: 293px;
+                    max-width: 293px;
+                    padding: 0;
+                    background: transparent;
+                }
+                &-img {
+                    height: 432px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &-love {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &-oxagile {
+                    width: 247px;
+                    position: relative;
+                    z-index: 5;
+                }
+                &-phrase {
+                    position: absolute;
+                    z-index: 5;
+                    top: 30px;
+                    left: 30px;
+                }
+                &-team {
+                    position: absolute;
+                    z-index: 5;
+                    bottom: 40px;
+                    left: 30px;
+                }
+            }
+        }
+    }
+    &--4 {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        background: url('../../images/photo/photo-4-bg-tel.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        color: #fff;
+        .photo {
+            &__title {
+                color: $secondColor;
+            }
+            &__info {
+                padding-top: 200px;
+            }
+        }
+    }
+    &--5 {
+        padding-bottom: 20px;
+        .photo {
+            &__info {
+                padding-top: 180px;
+            }
+            &__list {
+                &-item {
+                    min-width: 316px;
+                    max-width: 316px;
+                    padding: 0;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    &--6 {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        background: url('../../images/photo/photo-4-bg-tel.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        .photo {
+            &__slider {
+                max-width: 340px;
+                padding: 0 30px;
+                padding-top: 100px;
+            }
+            &__slide {
+                max-width: 100%;
+                width: 100%;
+                &-img {
+                    margin-bottom: 15px;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 260px;
+                    }
+                }
+                &-title {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 500;
+                }
+                &-genre {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 300;
+                }
+                &-link {
+                    color: $fourthColor;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+            &__info {
+                padding-top: 0;
+            }
+        }
+        .swiper {
+            &-button {
+                &-prev {
+                    font-size: 0;
+                    width: 44px;
+                    height: 44px;
+                    &::after {
+                        display: none;
+                    }
+                    svg {
+                        width: 44px;
+                        height: 44px;
+                        fill: #01F5C3;
+                    }
+                }
+                &-next {
+                    font-size: 0;
+                    width: 44px;
+                    height: 44px;
+                    &::after {
+                        display: none;
+                    }
+                    svg {
+                        width: 44px;
+                        height: 44px;
+                        fill: #01F5C3;
+                    }
+                }
+                &-disabled {
+                    pointer-events: auto;
+                    svg {
+                        fill: #3E3B3B;
+                    }
+                }
+            }
+        }
+    }
+    &__png-1,
+    &__png-2,
+    &__png-3 {
+        display: none;
+    }
+    &__eye {
+        position: absolute;
+        top: 50px;
+        width: 265px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__childs {
+        width: 170px;
+        position: absolute;
+        top: -50px;
+        right: 30px;
+    }
+    &__app {
+        position: absolute;
+        top: -50px;
+        left: 10px;
+    }
+    &__camera {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 300px;
+    }
+    &__chupa {
+        display: none;
+        position: absolute;
+    }
+    &__cap {
+        display: none;
+        position: absolute;
+    }
+    &__card {
+        display: none;
+    }
+    &__musicians {
+        width: 247px;
+        position: absolute;
+        top: -50px;
+        right: 30px;
+    }
+    &__info {
+        padding: 0 30px;
+        padding-top: 250px;
+        position: relative;
+    }
+    &__about {
+        font-weight: 250;
+        font-size: 18px;
+        line-height: 44px;
+        font-family: $turismo;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-weight: 250;
+        font-size: 26px;
+        line-height: 44px;
+        font-family: $turismo;
+        color: $fourthColor;
+    }
+    &__text {
+        margin-bottom: 40px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__btn {
+        margin: 0 auto;
+        width: 248px;
+        padding: 0;
+        border: 3px solid #000;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            border-color: #E15EFF;
+            .btn__inner {
+                border-top-color: #fff;
+                border-left-color: #fff;
+                border-right-color: #8700A6;
+                border-bottom-color: #8700A6;
+            }
+        }
+    }
+    &__list {
+        padding-bottom: 30px;
+        margin-top: 40px;
+        padding-left: 25px;
+        display: flex;
+        overflow-x: scroll;
+        &-item {
+            display: block;
+            margin-right: 23px;
+            min-width: 290px;
+            max-width: 290px;
+            padding: 17px;
+            background: #EFEFEF;
+        }
+        &-img {
+            border: 1px solid #fff;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            &__loop {
+                position: absolute;
+                bottom: 9px;
+                right: 9px;
+                z-index: 5;
+                display: block;
+                width: 21px;
+                height: 21px;
+                svg {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+        &-likes {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        &-like {
+            margin-right: 10px;
+            display: block;
+            width: 24px;
+            height: 21px;
+            svg {
+                width: 24px;
+                height: 21px;
+            }
+        }
+        &-num {
+            font-size: 18px;
+            line-height: 28px;
+            color: #C4C4C4;
+        }
+        &-author {
+            font-size: 14px;
+            line-height: 28px;
+            color: #2B2A29;
+        }
+    }
+    &__bottom {
+        display: none;
+    }
+    &__musicians-text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .photo {
+        &--1 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &--2 {
+            padding-bottom: 300px;
+            background: url('../../images/survey/survey-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            .photo__info {
+                padding-top: 320px;
+                padding-left: 80px;
+                padding-right: 600px;
+            }
+            .photo__more {
+                color: $thirdColor;
+            }
+            .photo__list {
+                padding: 0 20px;
+            }
+        }
+        &--3 {
+            .photo__list {
+                margin-top: 180px;
+                padding: 0 40px;
+            }
+        }
+        &--4 {
+            background: url('../../images/survey/survey-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            .photo {
+                &__title {
+                    color: $secondColor;
+                }
+                &__info {
+                    padding-top: 200px;
+                    padding-left: 80px;
+                    padding-right: 600px;
+                }
+            }
+        }
+        &--5 {
+            .photo {
+                &__info {
+                    padding-top: 180px;
+                    padding-right: 80px;
+                    padding-left: 680px;
+                }
+                &__list {
+                    flex-wrap: nowrap;
+                    padding: 0 40px;
+                    &-item {
+                        min-width: 33%;
+                        max-width: 438px;
+                        padding: 0;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+        &--6 {
+            padding-bottom: 300px;
+            background: url('../../images/survey/survey-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            .photo {
+                &__inner {
+                    max-width: 1440px;
+                    margin: 0 auto;
+                    position: relative;
+                    padding: 0 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__info {
+                    width: calc(100% - 750px);
+                    padding: 0;
+                }
+                &__slider {
+                    max-width: 690px;
+                    order: 1;
+                }
+                &__slide {
+                    &-img {
+                        img {
+                            width: 612px;
+                        }
+                    }
+                    &-title {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                    &-genre {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    &-link {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+        &__musicians {
+            width: auto;
+            right: auto;
+            left: 40px;
+            top: 0;
+        }
+        &__eye {
+            width: 518px;
+            top: 200px;
+            right: 0;
+            left: auto;
+            transform: none;
+        }
+        &__info {
+            padding-top: 70px;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-left: 532px;
+        }
+        &__app {
+            width: 432px;
+            height: auto;
+            top: 0;
+            left: 10px;
+        }
+        &__camera {
+            width: 565px;
+            height: auto;
+            right: 0;
+            top: 200px;
+        }
+        &__cap {
+            top: -100px;
+            left: 300px;
+            display: block;
+        }
+        &__chupa {
+            display: block;
+            right: 0;
+            top: -100px;
+        }
+        &__card {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+        &__childs {
+            width: auto;
+        }
+        &__about {
+            font-size: 24px;
+            line-height: 44px;
+        }
+        &__title {
+            margin-bottom: 60px;
+            font-size: 48px;
+            line-height: 44px;
+        }
+        &__text {
+            margin-bottom: 60px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &__btn {
+            margin: 0;
+        }
+        &__list {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 90px;
+            overflow-x: visible;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-right: 0;
+                min-width: 300px;
+                max-width: 300px;
+                margin-bottom: 50px;
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__bottom {
+            display: block;
+            text-align: center;
+        }
+        &__more {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 28px;
+            font-family: $psychic;
+        }
+        &__musicians-text {
+            padding-left: 40px;
+            max-width: 1440px;
+            margin: 0 auto;
+            display: block;
+        }
+        &__png-1,
+        &__png-2,
+        &__png-3 {
+            display: block;
+            position: absolute;
+            z-index: 5;
+        }
+        &__png-1 {
+            top: -30px;
+            right: 0;
+        }
+        &__png-2 {
+            top: -110px;
+            left: 0;
+        }
+        &__png-3 {
+            bottom: -110px;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .photo {
+        &--1 {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &--2 {
+            .photo__list {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

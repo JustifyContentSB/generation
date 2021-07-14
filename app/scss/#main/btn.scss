@@ -1,0 +1,29 @@
+.btn {
+    display: block;
+    padding: 4px;
+    background: #ccc;
+    font-family: $psychic;
+    color: #000;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 28px;
+    text-align: center;
+    &__inner {
+        display: block;
+        padding: 12px;
+        border: 3px solid #fff;
+        border-right-color: #898989;
+        border-bottom-color: #898989;
+        transition: $transition;
+    }
+    &:hover,
+    &:focus {
+        color: #8700A6;
+        .btn__inner {
+            border-top-color: $fourthColor;
+            border-left-color: $fourthColor;
+            border-right-color: #8700A6;
+            border-bottom-color: #8700A6;
+        }
+    }
+}

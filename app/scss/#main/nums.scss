@@ -1,0 +1,35 @@
+.nums {
+    display: none;
+    padding: 0 15px;
+    text-align: right;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 97px;
+    position: relative;
+    font-family: $psychic;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        top: -170px;
+        right: 15px;
+    }
+    &__actual {
+        font-size: 144px;
+        line-height: 194px;
+    }
+    &__separator {
+        font-size: 110px;
+        font-weight: 400;
+        position: relative;
+        top: -10px;
+        font-family: 'A1 Serif';
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nums {
+        display: block;
+    }
+}

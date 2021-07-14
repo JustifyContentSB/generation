@@ -1,0 +1,154 @@
+.survey {
+    padding: 0 30px;
+    padding-top: 300px;
+    padding-bottom: 140px;
+    background: url('../../images/survey/survey-bg.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    &__disk {
+        position: absolute;
+        z-index: 5;
+        top: 160px;
+        right: 30px;
+    }
+    &__img {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__info {
+        color: #fff;
+    }
+    &__title {
+        margin-bottom: 35px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        color: $fourthColor;
+        font-family: $psychic;
+        span {
+            white-space: nowrap;
+            color: #fff;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 45%;
+                height: 2px;
+                background: #fff;
+            }
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        p+p {
+            margin-top: 25px;
+        }
+    }
+    &__down {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__offer {
+        margin-bottom: 28px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 44px;
+        font-family: $psychic;
+        text-align: center;
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        width: 120px;
+        &+.survey__btn {
+            margin-left: 18px;
+        }
+        &-disabled {
+            color: #A2A2A2;
+        }
+    }
+    &__what {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .survey {
+        padding-left: 80px;
+        padding-right: 80px;
+        background-size: 100% 100%;
+        &__disk {
+            width: 228px;
+            height: 228px;
+            right: auto;
+            left: 50px;
+        }
+        &__inner {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        &__img {
+            order: 1;
+        }
+        &__info {
+            max-width: 580px;
+        }
+        &__title {
+            margin-bottom: 50px;
+            text-align: left;
+            font-size: 48px;
+            line-height: 44px;
+        }
+        &__text {
+            margin-bottom: 85px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &__down {
+            display: none;
+        }
+        &__offer {
+            margin-bottom: 45px;
+            text-align: left;
+            font-size: 48px;
+            line-height: 44px;
+        }
+        &__btns {
+            justify-content: flex-start;
+        }
+        &__btn {
+            padding: 5px;
+            width: 185px;
+            font-size: 48px;
+            line-height: 28px;
+            &+.survey__btn {
+                margin-left: 24px;
+            }
+            .btn__inner {
+                padding: 20px;
+                border-width: 4px;
+            }
+        }
+        &__what {
+            display: block;
+            font-size: 24px;
+            line-height: 44px;
+            font-family: $turismo;
+        }
+    }
+}

@@ -1,0 +1,256 @@
+.header {
+    background: url('../../images/sec/sec-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 100px;
+    &--question {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background: none;
+    }
+    &__inner {
+        padding: 45px 30px;
+        position: relative;
+    }
+    &__main {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 20px;
+        color: $thirdColor;
+        font-family: $psychic;
+    }
+    &__logo {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        &-desktop {
+            display: none;
+        }
+    }
+    &__burger {
+        display: inline-block;
+    }
+    &__list {
+        padding: 20px 30px;
+        position: fixed;
+        z-index: 100;
+        background: $secBg;
+        left: -100%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $psychic;
+        transition: $transition;
+        &.active {
+            left: 0;
+        }
+        li {
+            &+li {
+                margin-top: 15px;
+            }
+            &:first-child {
+                color: $thirdColor;
+            }
+            &:nth-child(2) {
+                color: $firstColor;
+            }
+        }
+    }
+    &__info {
+        margin-top: 50px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        color: $firstColor;
+        font-family: $turismo;
+    }
+    &__text {
+        margin-top: 25px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        p+p {
+            margin-top: 15px;
+        }
+        &-together {
+            color: $secondColor;
+            font-weight: 700;
+        }
+        &-summer {
+            color: $thirdColor;
+            font-weight: 700;
+        }
+    }
+    &__timer {
+        margin-top: 30px;
+        font-family: $psychic;
+        display: flex;
+        align-items: center;
+        &-count {
+            width: 126px;
+            min-width: 126px;
+            height: 126px;
+            margin-right: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            position: relative;
+            display: none;
+            &.count__days {
+                display: flex;
+            }
+            .count__svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        &-circle {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &-values {
+            position: relative;
+            z-index: 5;
+        }
+        &-num {
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 64px;
+        }
+        &-text {
+            max-width: 135px;
+            color: $fourthColor;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+    &__girl {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-image: url('../../images/sec/sec-desktop.png');
+        &--question {
+            padding: 0;
+            background: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        &__inner {
+            padding: 45px 90px;
+        }
+        &__info {
+            max-width: 623px;
+            margin-left: calc((100% - 1200px)/2);
+        }
+        &__title {
+            margin-bottom: 58px;
+            font-size: 60px;
+            line-height: 72px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 28px;
+            p+p {
+                margin-top: 25px;
+            }
+        }
+        &__timer {
+            margin-top: 55px;
+            &-count {
+                width: 134px;
+                height: 134px;
+                margin-right: 56px;
+                position: relative;
+            }
+            &-circle {
+                width: 134px;
+                height: 134px;
+            }
+            &-text {
+                max-width: 250px;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        &__girl {
+            display: block;
+            position: absolute;
+            left: calc((100% - 1200px)/2 + 650px);
+            bottom: 37px;
+            transform: rotateZ(2deg);
+        }
+        &__burger {
+            display: none;
+        }
+        &__list {
+            display: block;
+            position: static;
+            padding: 0;
+            background: transparent;
+        }
+        &__logo {
+            &-mob {
+                display: none;
+            }
+            &-desktop {
+                display: block;
+            }
+        }
+        &__line {
+            bottom: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .header {
+        &__girl {
+            left: calc((100% - 1200px)/2 + 700px);
+        }
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .header {
+        padding-bottom: 160px;
+        &__girl {
+            bottom: -20px;
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .header {
+        padding-bottom: 160px;
+        &__girl {
+            bottom: 0px;
+        }
+    }
+}
